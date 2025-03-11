@@ -931,15 +931,15 @@ class GameScene extends Phaser.Scene{
     if(this.playerConfig.lv>=70){
       gameWinLoseSpan.textContent="真的超大杯(指的是強度)"
       gameEndScoreSpan.textContent="玩家手部乘區比設計師強多了"
-      gameEndImage.src="./public/assets/gameImg/超大杯配圖.jpg"
+      gameEndImage.src="./public/assets/gameImg/superBigCup.jpg"
     }else if(this.playerConfig.lv>45&&this.playerConfig.lv<70){
       gameWinLoseSpan.textContent="大杯"
       gameEndScoreSpan.textContent="調整歸來仍是個大杯"
-      gameEndImage.src="./public/assets/gameImg/大杯配圖.jpg"
+      gameEndImage.src="./public/assets/gameImg/bigCup.jpg"
     }else if(this.playerConfig.lv<=45){
       gameWinLoseSpan.textContent="中杯"
       gameWinLoseSpan.textContent="幹員是中杯，但你的小杯操作彌補了這點"
-      gameEndImage.src="./public/assets/gameImg/中杯配圖.jpg"
+      gameEndImage.src="./public/assets/gameImg/middleCup.jpg"
     }
 
     gameEndDiv.style.display="flex"
