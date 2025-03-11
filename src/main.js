@@ -18,7 +18,21 @@ const gameWinLoseSpan=document.getElementById('gameWinLoseSpan')
 const gameEndScoreSpan=document.getElementById('gameEndScoreSpan')
 const gameEndImage=document.getElementById('gameEndImg')
 // dom切換面板--------------------------
-
+// 把路徑存成常數看看會不會用到
+const bg ='../public/assets/map.jpg'
+const enemyRH='../public/assets/rabbitHead.png'
+const player= '../public/assets/player/playerDefault.png'
+const attack='../public/assets/player/attack.png'
+const move ='../public/assets/player/move.png'
+const die ='../public/assets/player/dead.png'
+const solider= '../public/assets/solider.png'
+const superSolider ='../public/assets/superSolider.png'
+const skillA='../public/assets/skill/skillA.png'
+const skillB='../public/assets/skill/skillB.png'
+const skillC='../public/assets/skill/skillC.png'
+const bomb='../public/assets/skill/bomb.png'
+const attackSkill='../public/assets/skill/attackAnime.png'
+const bgm='../public/assets/BGM/bgm.mp3'
 class GameScene extends Phaser.Scene{
 
   // 繼承構造體
@@ -90,24 +104,24 @@ class GameScene extends Phaser.Scene{
   }
   // ------------------------預先載入素材--------------------------------------------------------
   preload(){
-    this.load.image('bg','../public/assets/map.jpg')
-    this.load.image('enemyRH','../public/assets/rabbitHead.png')
-    this.load.spritesheet('player','../public/assets/player/playerDefault.png', { frameWidth: 200, frameHeight: 200 })
-    this.load.spritesheet('attack','../public/assets/player/attack.png', { frameWidth: 200, frameHeight: 200 })
-    this.load.spritesheet('move','../public/assets/player/move.png', { frameWidth: 200, frameHeight: 200 })
-    this.load.spritesheet('die','../public/assets/player/dead.png', { frameWidth: 200, frameHeight: 200 })
-    this.load.spritesheet('solider','../public/assets/solider.png', { frameWidth: 200, frameHeight: 200 })
-    this.load.spritesheet('superSolider','../public/assets/superSolider.png', { frameWidth: 300, frameHeight: 300 })
+    this.load.image('bg',bg)
+    this.load.image('enemyRH',enemyRH)
+    this.load.spritesheet('player',player, { frameWidth: 200, frameHeight: 200 })
+    this.load.spritesheet('attack',attack, { frameWidth: 200, frameHeight: 200 })
+    this.load.spritesheet('move',move, { frameWidth: 200, frameHeight: 200 })
+    this.load.spritesheet('die',die, { frameWidth: 200, frameHeight: 200 })
+    this.load.spritesheet('solider',solider, { frameWidth: 200, frameHeight: 200 })
+    this.load.spritesheet('superSolider',superSolider, { frameWidth: 300, frameHeight: 300 })
     // 技能圖示
-    this.load.image('skillA','../public/assets/skill/skillA.png')
-    this.load.image('skillB','../public/assets/skill/skillB.png')
-    this.load.image('skillC','../public/assets/skill/skillC.png')
+    this.load.image('skillA',skillA)
+    this.load.image('skillB',skillB)
+    this.load.image('skillC',skillC)
     //技能圖示
-    this.load.spritesheet('bomb','../public/assets/skill/bomb.png',{frameWidth:200,frameHeight:125})
-    this.load.spritesheet('attackSkill','../public/assets/skill/attackAnime.png',{frameWidth:300,frameHeight:150})
+    this.load.spritesheet('bomb',bomb,{frameWidth:200,frameHeight:125})
+    this.load.spritesheet('attackSkill',attackSkill,{frameWidth:300,frameHeight:150})
 
     //背景音樂
-    this.load.audio('bgm','../public/assets/BGM/bgm.mp3')
+    this.load.audio('bgm',bgm)
   }
   // -------------------------生成素材---------------------------------------------------------
   create(){
