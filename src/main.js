@@ -3,7 +3,7 @@ import './style.css'
 // import { corpseBomb } from './attackAndSkill'
 // 沒想到越寫越多功能，應該一開始就分類的
 // -----------------------------------------
-// export  {GameScene}
+export  {GameScene}
 const size={
   //遊戲canvas視窗大小
   width:1200,
@@ -972,7 +972,7 @@ const config = {
 const game= new Phaser.Game(config)
 
 
-const gameConfig=new GameScene()
+// const gameConfig=new GameScene()
 //建立instance才可以使用emmit修改屬性
 // game.events.on('skillUp', () => {
 //   game.scene.sleep('learnSkill')
