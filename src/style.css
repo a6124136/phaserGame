@@ -68,7 +68,7 @@ main{
 
 #gameStartDiv{
   display: flex;
-  background-image: url(../public/assets/背景.png);
+  background-image: url(../public/assets/backGround.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
