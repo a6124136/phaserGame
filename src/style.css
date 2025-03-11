@@ -94,3 +94,8 @@ main{
   color: var(--liClr);
   cursor: pointer;
 }
+
+/* 載入遊戲資源 隱藏起來 純粹為了讓github能讀的到*/
+#gameResource{
+  display: none;
+}
