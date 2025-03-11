@@ -1,5 +1,5 @@
 import './style.css'
-import Phaser, { Physics } from 'phaser'
+// import Phaser, { Physics } from 'phaser'
 // import { corpseBomb } from './attackAndSkill'
 // 沒想到越寫越多功能，應該一開始就分類的
 // -----------------------------------------
