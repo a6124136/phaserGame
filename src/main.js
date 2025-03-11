@@ -90,24 +90,24 @@ class GameScene extends Phaser.Scene{
   }
   // ------------------------預先載入素材--------------------------------------------------------
   preload(){
-    this.load.image('bg','./assets/map.jpg')
-    this.load.image('enemyRH','./assets/rabbitHead.png')
-    this.load.spritesheet('player','./assets/player/playerDefault.png', { frameWidth: 200, frameHeight: 200 })
-    this.load.spritesheet('attack','./assets/player/attack.png', { frameWidth: 200, frameHeight: 200 })
-    this.load.spritesheet('move','./assets/player/move.png', { frameWidth: 200, frameHeight: 200 })
-    this.load.spritesheet('die','./assets/player/dead.png', { frameWidth: 200, frameHeight: 200 })
-    this.load.spritesheet('solider','./assets/solider.png', { frameWidth: 200, frameHeight: 200 })
-    this.load.spritesheet('superSolider','./assets/superSolider.png', { frameWidth: 300, frameHeight: 300 })
+    this.load.image('bg','../public/assets/map.jpg')
+    this.load.image('enemyRH','../public/assets/rabbitHead.png')
+    this.load.spritesheet('player','../public/assets/player/playerDefault.png', { frameWidth: 200, frameHeight: 200 })
+    this.load.spritesheet('attack','../public/assets/player/attack.png', { frameWidth: 200, frameHeight: 200 })
+    this.load.spritesheet('move','../public/assets/player/move.png', { frameWidth: 200, frameHeight: 200 })
+    this.load.spritesheet('die','../public/assets/player/dead.png', { frameWidth: 200, frameHeight: 200 })
+    this.load.spritesheet('solider','../public/assets/solider.png', { frameWidth: 200, frameHeight: 200 })
+    this.load.spritesheet('superSolider','../public/assets/superSolider.png', { frameWidth: 300, frameHeight: 300 })
     // 技能圖示
-    this.load.image('skillA','./assets/skill/skillA.png')
-    this.load.image('skillB','./assets/skill/skillB.png')
-    this.load.image('skillC','./assets/skill/skillC.png')
+    this.load.image('skillA','../public/assets/skill/skillA.png')
+    this.load.image('skillB','../public/assets/skill/skillB.png')
+    this.load.image('skillC','../public/assets/skill/skillC.png')
     //技能圖示
-    this.load.spritesheet('bomb','./assets/skill/bomb.png',{frameWidth:200,frameHeight:125})
-    this.load.spritesheet('attackSkill','./assets/skill/attackAnime.png',{frameWidth:300,frameHeight:150})
+    this.load.spritesheet('bomb','../public/assets/skill/bomb.png',{frameWidth:200,frameHeight:125})
+    this.load.spritesheet('attackSkill','../public/assets/skill/attackAnime.png',{frameWidth:300,frameHeight:150})
 
     //背景音樂
-    this.load.audio('bgm','./assets/BGM/bgm.mp3')
+    this.load.audio('bgm','../public/assets/BGM/bgm.mp3')
   }
   // -------------------------生成素材---------------------------------------------------------
   create(){
