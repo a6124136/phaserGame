@@ -90,24 +90,24 @@ class GameScene extends Phaser.Scene{
   }
   // ------------------------預先載入素材--------------------------------------------------------
   preload(){
-    this.load.image('bg','/assets/地圖.jpg')
-    this.load.image('enemyRH','/assets/吐頭.png')
-    this.load.spritesheet('player','/assets/player/待機.png', { frameWidth: 200, frameHeight: 200 })
-    this.load.spritesheet('attack','/assets/player/攻擊.png', { frameWidth: 200, frameHeight: 200 })
-    this.load.spritesheet('move','/assets/player/移動.png', { frameWidth: 200, frameHeight: 200 })
-    this.load.spritesheet('die','/assets/player/死亡.png', { frameWidth: 200, frameHeight: 200 })
-    this.load.spritesheet('solider','/assets/小兵.png', { frameWidth: 200, frameHeight: 200 })
-    this.load.spritesheet('superSolider','/assets/大兵.png', { frameWidth: 300, frameHeight: 300 })
+    this.load.image('bg','./assets/地圖.jpg')
+    this.load.image('enemyRH','./assets/吐頭.png')
+    this.load.spritesheet('player','./assets/player/待機.png', { frameWidth: 200, frameHeight: 200 })
+    this.load.spritesheet('attack','./assets/player/攻擊.png', { frameWidth: 200, frameHeight: 200 })
+    this.load.spritesheet('move','./assets/player/移動.png', { frameWidth: 200, frameHeight: 200 })
+    this.load.spritesheet('die','./assets/player/死亡.png', { frameWidth: 200, frameHeight: 200 })
+    this.load.spritesheet('solider','./assets/小兵.png', { frameWidth: 200, frameHeight: 200 })
+    this.load.spritesheet('superSolider','./assets/大兵.png', { frameWidth: 300, frameHeight: 300 })
     // 技能圖示
-    this.load.image('skillA','/assets/skill/技能_折朽.png')
-    this.load.image('skillB','/assets/skill/技能_噩愿.png')
-    this.load.image('skillC','/assets/skill/技能_冠死以冕.png')
+    this.load.image('skillA','./assets/skill/技能_折朽.png')
+    this.load.image('skillB','./assets/skill/技能_噩愿.png')
+    this.load.image('skillC','./assets/skill/技能_冠死以冕.png')
     //技能圖示
-    this.load.spritesheet('bomb','/assets/skill/爆炸.png',{frameWidth:200,frameHeight:125})
-    this.load.spritesheet('attackSkill','/assets/skill/攻擊動畫.png',{frameWidth:300,frameHeight:150})
+    this.load.spritesheet('bomb','./assets/skill/爆炸.png',{frameWidth:200,frameHeight:125})
+    this.load.spritesheet('attackSkill','./assets/skill/攻擊動畫.png',{frameWidth:300,frameHeight:150})
 
     //背景音樂
-    this.load.audio('bgm','/assets/BGM/bgm.mp3')
+    this.load.audio('bgm','./assets/BGM/bgm.mp3')
   }
   // -------------------------生成素材---------------------------------------------------------
   create(){
