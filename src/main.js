@@ -3,6 +3,7 @@
 // import { corpseBomb } from './attackAndSkill'
 // 沒想到越寫越多功能，應該一開始就分類的
 // -----------------------------------------
+
 export  {GameScene}
 const size={
   //遊戲canvas視窗大小
@@ -19,20 +20,20 @@ const gameEndScoreSpan=document.getElementById('gameEndScoreSpan')
 const gameEndImage=document.getElementById('gameEndImg')
 // dom切換面板--------------------------
 // 把路徑存成常數看看會不會用到
-const bg ='../public/assets/map.jpg'
-const enemyRH='../public/assets/rabbitHead.png'
-const player= '../public/assets/player/playerDefault.png'
-const attack='../public/assets/player/attack.png'
-const move ='../public/assets/player/move.png'
-const die ='../public/assets/player/dead.png'
-const solider= '../public/assets/solider.png'
-const superSolider ='../public/assets/superSolider.png'
-const skillA='../public/assets/skill/skillA.png'
-const skillB='../public/assets/skill/skillB.png'
-const skillC='../public/assets/skill/skillC.png'
-const bomb='../public/assets/skill/bomb.png'
-const attackSkill='../public/assets/skill/attackAnime.png'
-const bgm='../public/assets/BGM/bgm.mp3'
+const bg ='./public/assets/map.jpg'
+const enemyRH='./public/assets/rabbitHead.png'
+const player= './public/assets/player/playerDefault.png'
+const attack='./public/assets/player/attack.png'
+const move ='./public/assets/player/move.png'
+const die ='./public/assets/player/dead.png'
+const solider= './public/assets/solider.png'
+const superSolider ='./public/assets/superSolider.png'
+const skillA='./public/assets/skill/skillA.png'
+const skillB='./public/assets/skill/skillB.png'
+const skillC='./public/assets/skill/skillC.png'
+const bomb='./public/assets/skill/bomb.png'
+const attackSkill='./public/assets/skill/attackAnime.png'
+const bgm='./public/assets/BGM/bgm.mp3'
 class GameScene extends Phaser.Scene{
 
   // 繼承構造體
